@@ -6,7 +6,7 @@ import networkx as nx
 from pyvis.network import Network
 
 # Read dataset
-df_interact = pd.read_xlsx('data/DDI_data.xlsx')
+df_interact = pd.read_xlsx('DDI_data.xlsx')
 
 # Set header title
 st.title('Network Graph Visualization of Drug-Drug Interactions')
