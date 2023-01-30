@@ -25,12 +25,12 @@ if len(selected_drugs) == 0:
 
 # Create network graph when user selects >= 1 item
 else:
-    df_select = df_interact.loc[df_interact['drug_1_name'].isin(selected_drugs) | \
-                                df_interact['drug_2_name'].isin(selected_drugs)]
+    df_select = df_interact.loc[df_interact['drug1_name'].isin(selected_drugs) | \
+                                df_interact['drug2_name'].isin(selected_drugs)]
     df_select = df_select.reset_index(drop=True)
 
     # Create networkx graph object from pandas dataframe
-    G = nx.from_pandas_edgelist(df_select, 'drug_1_name', 'drug_2_name', 'weight')
+    G = nx.from_pandas_edgelist(df_select, 'drug1_name', 'drug2_name', 'weight')
 
     # Initiate PyVis network object
     drug_net = Network(height='465px', bgcolor='#222222', font_color='white')
