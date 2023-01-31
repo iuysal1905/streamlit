@@ -1,10 +1,12 @@
-pip install pandas openpyxl
+
 # Import dependencies
 import streamlit as st
 import streamlit.components.v1 as components
 import pandas as pd
 import networkx as nx
 from pyvis.network import Network
+import pip
+pip.main(["install", "openpyxl"])
 
 # Read dataset
 df_interact = pd.read_excel('DDI_data.xlsx')
