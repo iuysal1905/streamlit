@@ -9,15 +9,15 @@ import pip
 pip.main(["install", "openpyxl"])
 
 # Read dataset
-df_interact = pd.read_excel('data1.xlsx')
+df_interact = pd.read_excel('data_serum.xlsx')
 
 # Set header title
 st.title('Network Graph Visualization of Drug-Drug Interactions')
 
 # Define list of selection options and sort alphabetically
-drug_list = ['Amiodarone','Nefazodone','Phenobarbital','Venlafaxine','Primidone','Phenytoin',
-'Fluvoxamine','Curcumin','Ziprasidone','Carbamazepine','Fosphenytoin','Pentobarbital','Verapamil',
-'Clozapine','Diltiazem','Vemurafenib','Cyclosporine','Pitolisant','Stiripentol','Rifampicin']
+drug_list = ['Apalutamide', 'Pitolisant','Dabrafenib','Isavuconazole','Enzalutamide','Deferasirox','Osimertinib',
+'Aprepitant','Ceritinib','Stiripentol','Mifepristone','Fosaprepitant','Mitotane','Bosentan','Simeprevir','Lorpiprazole',
+'Luliconazole','Ivacaftor','Conivaptan','Vemurafeni']
 drug_list.sort()
 
 # Implement multiselect dropdown menu for option selection (returns a list)
