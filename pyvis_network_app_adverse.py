@@ -15,8 +15,8 @@ df_interact = pd.read_excel('ddi_adverse.xlsx')
 st.title('Network Graph Visualization of Drug-Drug Interactions')
 
 # Define list of selection options and sort alphabetically
-drug_list = ['Ticlopidine','Clotrimazole','Rucaparib','Fluvoxamine','Acetyl sulfisoxazole','Delavirdine','Clemastine','Diltiazem','Bortezomib',
-             'Phenobarbital','Sulfisoxazole','Primidone','Carbamazepine','Nevirapine','Atomoxetine','Curcumin','Verapamil','Rifapentine','Fluconazole','Rifampicin']
+drug_list = ['Olopatadine','Remifentanil','Fluticasone propionate','Sufentanil','Pipamperone','Morphine','Tolcapone','Pomalidomide','Pethidine','Oxycodone',
+'Desflurane','Levobupivacaine','Paclitaxel','Sevoflurane','Isoflurane','Fentanyl','Clozapine','Dezocine','Dexmedetomidine','Ropivacaine']
 drug_list.sort()
 
 
