@@ -76,6 +76,7 @@ st.markdown(
     <h6><a href="https://iuysal1905-streamlit-networkapp-kztp4y.streamlit.app/" target="_blank">Diabetes, Hypertension and Hyperlipidemia</a></h6>
     <h6><a href="https://iuysal1905-streamlit-pyvis-network-app-serum-y63ywu.streamlit.app/" target="_blank">Interaction Type : Serum Concentration</a></h6>
     <h6><a href="https://iuysal1905-streamlit-pyvis-network-app-adverse-yl8jbn.streamlit.app/ target="_blank">Interaction Type : Adverse </a></h6>
+    <h6><a href="https://iuysal1905-streamlit-pyvis-network-app-metabolism-9weo0f.streamlit.app/ target="_blank">Interaction Type : Metabolism </a></h6>
     <h6>Disclaimer: This app is NOT intended to provide any form of medical advice or recommendations. Please consult your doctor or pharmacist for professional advice relating to any drug therapy.</h6>
     """, unsafe_allow_html=True
     )
