@@ -48,7 +48,7 @@ else:
     drug_net.from_nx(G)
 
     # Generate network with specific layout settings
-    drug_net.barnes_hut(
+    drug_net.repulsion(
                         node_distance=420,
                         central_gravity=0.33,
                         spring_length=110,
