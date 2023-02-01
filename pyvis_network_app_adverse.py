@@ -18,9 +18,11 @@ st.title('Network Graph Visualization of Drug-Drug Interactions')
 drug_list = ['Ticlopidine','Clotrimazole','Rucaparib','Fluvoxamine','Acetyl sulfisoxazole','Delavirdine','Clemastine','Diltiazem','Bortezomib',
              'Phenobarbital','Sulfisoxazole','Primidone','Carbamazepine','Nevirapine','Atomoxetine','Curcumin','Verapamil','Rifapentine','Fluconazole','Rifampicin']
 drug_list.sort()
+vs=['Repulsion', 'Barnes Hut']
 
 # Implement multiselect dropdown menu for option selection (returns a list)
 selected_drugs = st.multiselect('Select drug(s) to visualize', drug_list)
+selected_vs=st.multiselect('Select one for visualization', vs)
 
 # Set info message on initial site load
 if len(selected_drugs) == 0:
@@ -45,6 +47,13 @@ else:
     drug_net.repulsion(node_distance=420, central_gravity=0.33,
                        spring_length=110, spring_strength=0.10,
                        damping=0.95)
+    drug_net.barnes_hut(
+                           gravity=-80000, 
+                           central_gravity=central_gravity, 
+                           spring_length=spring_length, 
+                           spring_strength=spring_strength, 
+                           damping=damping, 
+                           overlap=0)  
 
     # Save and read graph as HTML file (on Streamlit Sharing)
     try:
