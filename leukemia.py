@@ -4,9 +4,9 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import pip
-pip.main(["install", "openpyxl"])
 
-df_interact = pd.read_excel('leukemia_ddi.xls')
+
+df_interact = pd.read_excel('leukemia_ddi.xlsx')
 
 st.title('Network Graph Visualization of Drug-Drug Interactions')
 
