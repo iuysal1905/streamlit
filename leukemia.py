@@ -6,7 +6,7 @@ from pyvis.network import Network
 import pip
 pip.main(["install", "openpyxl"])
 
-# Read dataset 
+# Read dataset  
 df_interact = pd.read_excel('leukemia_ddi.xlsx')
 
 # Set header title
