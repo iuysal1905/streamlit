@@ -4,8 +4,7 @@ import pandas as pd
 import networkx as nx
 from pyvis.network import Network
 import pip
-from openpyxl import Workbook
-wb = Workbook()
+
 pip.main(["install", "openpyxl"])
 df_interact = pd.read_excel('leukemia_ddi.xlsx')
 
