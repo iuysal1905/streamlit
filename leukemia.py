@@ -6,13 +6,10 @@ from pyvis.network import Network
 import pip
 pip.main(["install", "openpyxl"])
 
-# Read dataset  
 df_interact = pd.read_excel('leukemia_ddi.xlsx')
 
-# Set header title
 st.title('Network Graph Visualization of Drug-Drug Interactions')
 
-# Define list of selection options and sort alphabetically
 drug_list = ['Mercaptopurine','Tioguanine','Prednisolone','Dexamethasone','Vincristine','Methotrexate','Daunorubicin','Cytarabine']
 drug_list.sort()
 
